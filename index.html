@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="background-animation"></div>
+         <div class="landing-page">
+            <div class="welcome-message">
+                <h1>Welcome to Tic-Tac-Toe Game!</h1>
+                <p>Enter your names and start the game.</p>
+            </div>
+            <div class="player-name-input">
+                <input type="text" id="player1-name" placeholder="Enter Player 1 Name" required>
+                <div id="player1-error" class="error-message"></div> 
+                <input type="text" id="player2-name" placeholder="Enter Player 2 Name" required>
+                <div id="player2-error" class="error-message"></div> 
+                <button id="start-game">Start Game</button>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-btn"><span id="theme-icon"></span> Day/Night</button>
+            </div>
+         </div>
+           <div class="game-page" id="game-page">
+         <div id="game-board" class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div id="winner-announcement" class="winner-announcement"></div>
+        <button id="restart-btn">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
